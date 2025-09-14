@@ -24,13 +24,13 @@
         </section>
         <section class="form-section">
             <h2>Apply Now </h2>
-            <form id="Opporunityform">
-                <input type="text" id="name" placeholder="Your Full Name" required/><br>
-                <input type="text" id="email" placeholder="Your Email-id" required/><br>
-                <input type="text" id="Contact" placeholder="Your Contact Number" required/><br>
-                <input type="text" id="Country" placeholder="Your Country Name" required/><br>
-                <input type="text" id="City" placeholder="Your City Name" required/><br>
-                <textarea id="interest" placeholder="Why Are you interested?" required></textarea>
+            <form id="myform" action="https://formspree.io/f/busine.ss lif.e" method="POST">
+                <input type="text"  name="name" id="name" placeholder="Your Full Name" autocomplete="name" required/><br>
+                <input type="email" name="email" id="email" placeholder="Your Email-id" autocomplete="email" required/><br>
+                <input type="tel" name="contact" id="Contact" placeholder="Your Contact Number" autocomplete="tel" required/><br>
+                <input type="text" name="country" id="Country" placeholder="Your Country Name" autocomplete="country" required/><br>
+                <input type="text" name="city" id="City" placeholder="Your City Name" autocomplete="address-level2" required/><br>
+                <textarea name="interest" id="interest" placeholder="Why Are you interested?"  autocomplete="off"required></textarea>
                 <button type="submit">Submit Application</button><br>
                 <p id="conformatioMessage" class="hidden">Thank you!We'll be in touch shortly.</p>
             </form>
@@ -39,3 +39,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
